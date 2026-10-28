@@ -1,0 +1,7 @@
+<h1 class="page-title">My Photos</h1>
+
+<% @photos.each do |photo| %>
+    <div class="photo">
+      <%= image_tag "photos/#{photo}", alt: "Photo" %>
+    </div>
+<% end %>
